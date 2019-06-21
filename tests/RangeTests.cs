@@ -7,11 +7,11 @@ namespace tests
     public class RangeTests
     {
         [Fact]
-        public void Test1()
+        public void CountShouldControlNumberOfResults()
         {
             var range = new Range {Count = 3};
             var generated = range.of(()=>"");
-            Assert.Equal(3, gener)
+            Assert.Equal(3, generated.Count());
 
         }
     }
